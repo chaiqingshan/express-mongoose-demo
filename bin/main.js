@@ -4,7 +4,7 @@ require('../model')
 let app=require('../app')
 let server=http.createServer(app)
 
-mongoose.connect("mongodb://localhost/data",function (err) {
+mongoose.connect("mongodb://39.99.194.217:3000/albums",function (err) {
     console.log("mongodb 已连接!")
     if(!err){
         server.listen(3000,function (err) {
